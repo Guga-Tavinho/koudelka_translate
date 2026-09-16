@@ -103,7 +103,7 @@ Dependências: Python, Tkinter e Pillow.
 ### jpsxdec_v2.1-beta
 
 jPSXdec é uma ferramenta externa para analisar e converter mídia de PlayStation 1. Neste projeto ela é usada principalmente para:
-
+Link: https://github.com/m35/jpsxdec
 - analisar STRs;
 - conferir a quantidade de quadros;
 - extrair ou converter áudio CD-ROM XA de determinados MCFs.
@@ -258,6 +258,7 @@ Dependências: Python, Tkinter e Pillow.
 ### tile_molester_021
 
 Tile Molester é uma ferramenta Java externa e genérica para visualizar e editar gráficos em blocos/tile graphics de arquivos binários. Ela pode auxiliar na inspeção manual de formatos gráficos, mas não conhece automaticamente a estrutura específica do Koudelka.
+Link: https://github.com/toruzz/TileMolester
 
 Dependência: Java.
 
