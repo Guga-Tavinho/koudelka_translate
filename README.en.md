@@ -15,7 +15,7 @@ This repository contains source-code tools created to inspect, translate, rebuil
 2. Only the Japanese version contains these subtitles.
 3. Therefore, the MCF subtitle tool must use Japanese MCF files as its base. MCF subtitles are stored as indexed images, not as ordinary text strings.
 
-The tools were developed and tested primarily on 64-bit Windows 10/11 with BIN/CUE images created from legally obtained discs owned by the user.
+The tools were developed and tested primarily on 64-bit Windows 10/11.
 
 ## File locations inside the BIN image
 
