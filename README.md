@@ -102,8 +102,9 @@ Dependências: Python, Tkinter e Pillow.
 
 ### jpsxdec_v2.1-beta
 
-jPSXdec é uma ferramenta externa para analisar e converter mídia de PlayStation 1. Neste projeto ela é usada principalmente para:
 Link: https://github.com/m35/jpsxdec
+jPSXdec é uma ferramenta externa para analisar e converter mídia de PlayStation 1. Neste projeto ela é usada principalmente para:
+
 - analisar STRs;
 - conferir a quantidade de quadros;
 - extrair ou converter áudio CD-ROM XA de determinados MCFs.
