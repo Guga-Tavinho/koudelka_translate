@@ -103,6 +103,7 @@ Dependencies: Python, Tkinter, and Pillow.
 ### jpsxdec_v2.1-beta
 
 jPSXdec is an external PlayStation 1 media analysis and conversion utility. This project uses it mainly to:
+Link: https://github.com/m35/jpsxdec
 
 - analyze STR files;
 - verify frame counts;
@@ -258,7 +259,7 @@ Dependencies: Python, Tkinter, and Pillow.
 ### tile_molester_021
 
 Tile Molester is an external Java utility for viewing and editing tiled graphics in binary files. It can assist with manual graphics research, but it does not automatically understand Koudelka-specific formats.
-
+Link: https://github.com/toruzz/TileMolester
 Dependency: Java.
 
 ### TX8 Extractor
