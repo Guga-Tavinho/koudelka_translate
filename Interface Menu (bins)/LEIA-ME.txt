@@ -1,0 +1,78 @@
+KOUDELKA - EDITOR DE INTERFACE PT-BR
+===================================
+
+O que a ferramenta edita
+-------------------------
+- Opcoes do menu principal.
+- Comandos de batalha.
+- HP, MP, LV e Time.
+- Mensagens de obtencao/descarte.
+- Mensagens "You learned the spell...".
+- Telas Continue/Load e Save, incluindo todas as copias dos rotulos de cartao.
+- Botoes Espaco/Apagar da tela de renomear.
+- Outros textos encontrados automaticamente nos executaveis BIN/SLUS.
+
+O que ela NAO edita
+-------------------
+- ITMTBL.ITM.
+- Nomes de itens.
+- Descricoes do 001.TX4.
+
+Como usar
+---------
+1. Execute instalar_dependencias.bat uma vez.
+2. Execute abrir_koudelka_interface_gui.bat.
+3. Selecione a pasta extraida do jogo, aquela que possui MENU e BIN.
+4. Edite os textos ou clique em "Sugestoes PT-BR".
+5. Confira a previa Antes/Depois e o indicador de limite.
+6. Clique em "Gerar arquivos traduzidos..." e escolha uma pasta de saida.
+
+Use as setas para cima/baixo enquanto edita para ir ao texto anterior ou
+seguinte. O botao "Varrer novamente" repete a busca na pasta inteira.
+
+Os textos aparecem organizados em pastas recolhiveis. Use o controle +/− ao
+lado de cada grupo ou os botoes "Expandir tudo" e "Recolher tudo".
+O botao "Sugestoes PT-BR do grupo" altera somente a pasta ou grupo que estiver
+selecionado; "Sugestoes em tudo" continua aplicando as sugestoes gerais.
+As sugestoes gerais incluem tambem os textos encontrados pela varredura em
+FIELD.BIN, MOVIE.BIN, BATTLE.BIN, SLUS_010.51, MGCTEST.BIN e RENMTEST.BIN.
+Nomes proprios e termos que ja podem permanecer iguais nao sao alterados.
+Traducoes digitadas ou importadas nao sao substituidas pelas sugestoes; o botao
+preenche apenas os textos que ainda estiverem iguais ao original.
+
+Textos encontrados automaticamente recebem um limite conservador igual ao
+tamanho original. Isso evita sobrescrever dados vizinhos desconhecidos.
+Somente textos no formato grafico nativo (nibble) entram na varredura. ASCII
+tecnico, caminhos, nomes internos e dados aleatorios sao ignorados por seguranca.
+
+Nos blocos terminados por zero, o limite mostrado ja desconta uma posicao para
+o terminador. Por exemplo, um bloco fisico de 20 posicoes aparece como 19/19.
+Isso impede que o jogo continue lendo o texto seguinte.
+
+Antes de salvar, a ferramenta faz uma auditoria byte a byte. Ela interrompe a
+geracao se o tamanho de um arquivo mudar, se faltar terminador, se houver blocos
+sobrepostos ou se algum byte fora das areas autorizadas for alterado.
+
+A ferramenta preserva a estrutura MENU/BIN e nao altera os arquivos originais.
+
+Fonte e acentos
+---------------
+A previa usa MENU/FONTS.FT4. Quando uma traducao utiliza caracteres como
+acentos ou cedilha, uma copia adaptada de MENU/FONTS.FT4 e gerada na pasta
+de saida. A ferramenta tambem corrige a largura desses novos caracteres para
+que eles nao fiquem afastados no jogo. Essa copia deve ser injetada junto com
+os demais arquivos gerados.
+
+Mensagens de magia
+------------------
+Use | para escolher a quebra entre as duas linhas.
+Exemplo:
+    Voce aprendeu|a magia "Flare".
+
+CSV
+---
+O botao Exportar CSV permite revisar todos os textos externamente. Depois,
+use Importar CSV. Traducoes maiores que o espaco original sao recusadas.
+As linhas sao associadas por arquivo e offset, mesmo que os IDs scan_n mudem
+depois de uma nova varredura. Um CSV antigo nao apaga traducoes ja preenchidas
+quando a linha antiga ainda contem o texto original em ingles.

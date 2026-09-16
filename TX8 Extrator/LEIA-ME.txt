@@ -1,0 +1,107 @@
+KOUDELKA TX8 - EXTRATOR / IMPORTADOR DE IMAGENS v3 (importacao em lote)
+
+Abra abrir_tx8_extrator.bat. Requer Python 3.10+ com Tkinter e Pillow.
+Se faltar Pillow, execute instalar_dependencias.bat (usa internet).
+Os originais nunca sao sobrescritos. O importador gera um NOVO arquivo TX8.
+
+USO
+- Abrir TX8: carrega um arquivo, inclusive arquivos com varios blocos.
+- Abrir pasta: busca TX8 nas subpastas tambem.
+- Setas para cima/baixo: navegam nos arquivos e imagens da lista.
+- Visualizacao Automatica: monta as telas 128x768 em 320x240;
+  nas demais imagens mostra a textura linear completa.
+- Paineis: reorganiza faixas verticais de 256 linhas, sem descartar pixels.
+  Nos mapas e apenas uma vista alternativa do atlas; nao reconstrui a planta do jogo.
+- Cor nativa 0000 transparente: opcional. Padrao opaco para telas de fundo.
+  O bit STP da paleta nao e interpretado como transparencia de 50%: o efeito
+  no PS1 depende do modo de mistura usado pelo jogo.
+- Salvar imagem visivel: PNG na resolucao nativa da vista escolhida, sem zoom.
+- Extrair arquivo / todos: cria uma pasta nova com PNG linear, paineis quando
+  aplicavel, recorte de tela quando aplicavel e dados_extracao.json.
+- Recarregar: le novamente o TX8 selecionado.
+
+GAME OVER
+MENU/GAMEOVER/OVER1.TX8 contem 5 imagens:
+001: The End; 002 a 005: quatro imagens Game Over.
+Textura armazenada: 128x768; paineis montados: 384x256.
+O recorte 320x240 elimina as margens de preenchimento para visualizacao.
+Para preservar todos os pixels, guarde sempre os PNGs *_linear.png.
+
+FORMATOS TESTADOS
+TX8 8bpp com cabecalho de 16 bytes, CLUT de 256 cores PS1 e pixels lineares.
+Blocos unicos e multiplos (incluindo preenchimento entre blocos).
+Variante NEWF0 de mapas: 192 bytes adicionais antes da paleta.
+Variante MENUPAD: 32 linhas adicionais de pixels, preservadas na exportacao.
+Variantes desconhecidas sao recusadas com aviso, sem adivinhar offsets.
+
+IMPORTAR PNG -> TX8
+1. Abra abrir_tx8_importador.bat (ou o mesmo abrir_tx8_extrator.bat).
+2. Abra o TX8 original e selecione a imagem correta na lista.
+3. Clique em "Importar PNG..." para abrir o editor de substituicao.
+4. No editor, confira "Imagem a substituir" e clique em "Importar PNG...".
+5. Confira ANTES e DEPOIS. DEPOIS ja usa a paleta real do TX8.
+6. Para outras imagens do MESMO arquivo, mude "Imagem a substituir" e importe
+   os respectivos PNGs. As importacoes anteriores ficam guardadas nesta janela.
+7. Clique em "Salvar novo TX8...". Todas as imagens preparadas sao gravadas
+   juntas, por exemplo em OVER1_IMPORTADO.TX8. As demais ficam intactas.
+8. Injete esse novo TX8 no caminho original do disco com seu injetor de arquivos.
+   Para OVER1: caminho interno MENU/GAMEOVER/OVER1.TX8.
+   Esta ferramenta nao altera nem injeta a imagem BIN/CUE.
+
+Na importacao INDIVIDUAL, o nome do PNG nao seleciona a imagem automaticamente.
+Confira a imagem e o numero escolhidos.
+O botao Recarregar PNG atualiza a previa apos voce salvar a edicao no editor externo.
+Desfazer nesta imagem remove somente a substituicao selecionada.
+Use "Anterior" e "Proxima", ao lado de "Imagem a substituir", para navegar
+pelas previas ANTES/DEPOIS. O contador mostra a imagem atual e o total (1 / 5,
+por exemplo). Trocar de imagem preserva todos os PNGs ja importados.
+Os botoes param na primeira/ultima imagem e ficam desativados durante operacoes.
+Antes de fechar, a ferramenta avisa se houver alteracoes ainda nao salvas.
+
+IMPORTAR VARIOS PNGS DE UMA VEZ
+No editor de substituicao, clique em "Importar varios PNGs..." e selecione
+os arquivos com Ctrl ou Shift. O numero INICIAL do nome indica a imagem no TX8:
+  001_tela_320x240_PTBR.png -> imagem 001
+  002_tela_320x240_PTBR.png -> imagem 002
+  005_tela_320x240_PTBR.png -> imagem 005
+Tambem aceita 001.png, 001_linear.png e 001_paineis.png. A ordem da selecao
+nao importa. Voce pode importar todas as imagens ou apenas algumas delas.
+Confira a lista de associacoes e clique em Importar. A lista avisa se algum
+PNG substituira uma importacao anterior. Selecione cada imagem para ver ANTES
+e DEPOIS; "Salvar novo TX8..." grava todas as substituicoes juntas.
+Selecione somente UMA versao por numero: nao escolha linear, paineis e tela
+do mesmo numero no mesmo lote, nem original e PTBR do mesmo numero.
+Nomes sem numero, numeros repetidos ou fora do TX8 sao recusados sem adivinhar
+a associacao. Para um PNG sem numeracao, use a importacao individual.
+Se um arquivo do lote tiver tamanho, formato ou transparencia invalidos,
+nenhuma imagem do lote e aplicada. As importacoes anteriores permanecem.
+
+TAMANHOS ACEITOS
+- Textura linear: dimensoes nativas completas (128x768 no Game Over).
+- Paineis montados: 384x256 no Game Over, preservando todos os pixels.
+- Tela Game Over: 320x240. O importador recompoe os paineis e preserva todos os
+  pixels que ficaram fora desse recorte, sem esticar a imagem.
+- MENUPAD requer 128x288, incluindo as 32 linhas adicionais.
+- Nos mapas, aceita a textura linear ou os paineis; nao uma planta remontada.
+Dimensoes incorretas sao recusadas. Nunca importe uma captura ampliada da previa.
+
+CORES E TRANSPARENCIA
+A paleta original e mantida, nao sao criadas novas cores.
+PNGs RGB/RGBA sao convertidos para as cores mais proximas da paleta original.
+PNGs indexados com a mesma paleta preservam os indices exatamente.
+Pixels visualmente inalterados em RGB mantem seus indices e flags originais.
+Sempre que possivel, pixels editados mantem a classe do bit STP do pixel original.
+Transparencia total so e aceita se existir uma entrada nativa 0000 na paleta.
+Alpha parcial (1 a 254) e recusado: mescle o PNG com o fundo original primeiro.
+No Game Over, use PNG opaco: a paleta nao tem uma entrada 0000 transparente.
+A previa mostra as cores gravadas, mas nao simula a mistura/transparencia do PS1.
+O TX8 gerado deve ser testado no jogo/emulador apos a injecao.
+
+SEGURANCA
+Preserva tamanho, cabecalhos, paletas, padding, metadados e imagens nao editadas.
+Confere se a origem mudou e faz uma releitura da copia antes da gravacao final.
+Recusa sobrescrever qualquer destino existente; escolha um nome novo a cada vez.
+Nao muda os PNGs fornecidos nem os originais. Renomear PNG para TX8 nao converte.
+O JSON registra offsets, cabecalho, palavras nativas da paleta e SHA-256
+do arquivo lido como referencia; o importador usa o TX8 original, nao o JSON.
+Para mover a ferramenta, copie a pasta inteira, incluindo todos os modulos .py.

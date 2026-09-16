@@ -1,0 +1,40 @@
+KOUDELKA TX8 - EXTRATOR DE IMAGENS v1
+
+Abra abrir_tx8_extrator.bat. Requer Python 3.10+ com Tkinter e Pillow.
+Se faltar Pillow, execute instalar_dependencias.bat (usa internet).
+Nenhum arquivo TX8, BIN, SED ou SWD e alterado pelo extrator.
+
+USO
+- Abrir TX8: carrega um arquivo, inclusive arquivos com varios blocos.
+- Abrir pasta: busca TX8 nas subpastas tambem.
+- Setas para cima/baixo: navegam nos arquivos e imagens da lista.
+- Visualizacao Automatica: monta as telas 128x768 em 320x240;
+  nas demais imagens mostra a textura linear completa.
+- Paineis: reorganiza faixas verticais de 256 linhas, sem descartar pixels.
+  Nos mapas e apenas uma vista alternativa do atlas; nao reconstrui a planta do jogo.
+- Cor nativa 0000 transparente: opcional. Padrao opaco para telas de fundo.
+  O bit STP da paleta nao e interpretado como transparencia de 50%: o efeito
+  no PS1 depende do modo de mistura usado pelo jogo.
+- Salvar imagem visivel: PNG na resolucao nativa da vista escolhida, sem zoom.
+- Extrair arquivo / todos: cria uma pasta nova com PNG linear, paineis quando
+  aplicavel, recorte de tela quando aplicavel e dados_extracao.json.
+- Recarregar: le novamente o TX8 selecionado.
+
+GAME OVER
+MENU/GAMEOVER/OVER1.TX8 contem 5 imagens:
+001: The End; 002 a 005: quatro imagens Game Over.
+Textura armazenada: 128x768; paineis montados: 384x256.
+O recorte 320x240 elimina as margens de preenchimento para visualizacao.
+Para preservar todos os pixels, guarde sempre os PNGs *_linear.png.
+
+FORMATOS TESTADOS
+TX8 8bpp com cabecalho de 16 bytes, CLUT de 256 cores PS1 e pixels lineares.
+Blocos unicos e multiplos (incluindo preenchimento entre blocos).
+Variante NEWF0 de mapas: 192 bytes adicionais antes da paleta.
+Variante MENUPAD: 32 linhas adicionais de pixels, preservadas na exportacao.
+Variantes desconhecidas sao recusadas com aviso, sem adivinhar offsets.
+
+Esta versao apenas EXTRAI. Renomear PNG para TX8 nao converte nem reinjeta.
+O JSON registra offsets, cabecalho, palavras nativas da paleta e SHA-256
+do arquivo lido para auxiliar um futuro importador.
+Para mover a ferramenta, copie a pasta inteira: a GUI depende do core.

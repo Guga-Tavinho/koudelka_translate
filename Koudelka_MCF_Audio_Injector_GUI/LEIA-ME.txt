@@ -1,0 +1,30 @@
+KOUDELKA MCF - INJETOR DE AUDIO STRM
+====================================
+
+Esta ferramenta substitui o audio das cenas SCxx dentro de um MCF original.
+Ela NAO serve para o ENDING.MCF, que utiliza audio CD-ROM XA.
+
+Uso:
+1. Abra abrir_koudelka_mcf_audio_injector_gui.bat.
+2. Selecione o MCF original da mesma cena.
+3. Selecione o WAV editado.
+4. Escolha o nome do novo MCF.
+5. Clique em "Gerar MCF com audio editado".
+
+Requisitos do WAV:
+- PCM sem compressao;
+- 16-bit;
+- estereo;
+- mesma frequencia do MCF, normalmente 44.100 Hz;
+- duracao igual ou menor que a capacidade original.
+
+Por padrao, WAVs menores sao completados com silencio. WAVs maiores sao
+recusados para impedir dessincronizacao e perda de audio.
+
+A ferramenta detecta o tamanho real declarado pelo STRM (no Koudelka,
+normalmente 1.680 bytes/105 frames por canal e bloco), chama o psxavenc com
+o interleave correto, preserva todas as flags ADPCM e nunca altera o MCF
+original. Um relatorio .audio_inject_report.txt e criado junto do novo MCF.
+
+Depois, injete o novo arquivo na imagem do jogo usando o caminho interno:
+MOVIE/NOME_DA_CENA.MCF

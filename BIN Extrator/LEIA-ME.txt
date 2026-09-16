@@ -1,0 +1,33 @@
+KOUDELKA - EXTRATOR DE BIN/CUE
+==============================
+
+COMO ABRIR
+Dê dois cliques em abrir_bin_extrator.bat.
+
+COMO USAR
+1. Selecione o arquivo CUE do disco. Use o BIN somente quando não houver CUE.
+2. Confira ou altere a pasta de saída.
+3. Mantenha "Preservar LBNs" marcado para permitir a reinjeção posterior.
+4. Clique em Extrair.
+
+ARQUIVOS GERADOS
+- A pasta escolhida contém os arquivos extraídos do disco.
+- Um arquivo .cat é criado ao lado dela com o catálogo da imagem.
+- Um arquivo .sys é criado ao lado dela com a área de sistema.
+
+COMPATIBILIDADE KOUDELKA
+A ferramenta inclui a compilação modificada do psxrip. Nela, um modo de disco
+desconhecido, inclusive o modo 16 encontrado nesta imagem, exibe o aviso
+"Unknown disc mode 16; continuing anyway" e continua a leitura.
+
+CORREÇÃO DE CAMINHO
+O psxrip procura o BIN indicado pelo CUE a partir do diretório de execução. A
+interface executa automaticamente dentro da pasta do CUE, evitando o erro
+"could not retrieve file info" visto ao chamá-lo a partir de outra pasta.
+
+SEGURANÇA
+A imagem CUE/BIN de origem é aberta somente para leitura e não é alterada.
+Caso a pasta de saída já contenha arquivos, a ferramenta solicita confirmação.
+
+REQUISITO
+Python 3 com Tkinter. O psxrip.exe modificado já acompanha esta pasta.

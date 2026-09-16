@@ -1,0 +1,50 @@
+KOUDELKA - CONVERSOR AVI PARA STR
+=================================
+
+FUNCAO
+Converte um AVI editado para STR de PlayStation 1 usando psxavenc.
+Aceita um AVI isolado ou uma pasta inteira, preservando as subpastas.
+Por padrão, normaliza o AVI para um MKV lossless temporário com FFmpeg.
+
+PADRAO KOUDELKA
+- Vídeo MDEC v2
+- 320x240
+- 15 FPS
+- Áudio XA 37.800 Hz, estéreo, 4 bits
+- CD em velocidade 2x
+- XA File 1 / Canal 1
+- Áudio gravado depois dos setores de vídeo (-X), como no STR original
+- Setores STR de 2.336 bytes
+
+NOMES
+SC00.STR[0].avi vira SC00_NOVO.STR.
+Na hora de injetar no BIN, o caminho interno continua sendo MOVIE/SC00.STR.
+
+STR ORIGINAL
+Selecionar o STR original é opcional, mas recomendado. A ferramenta compara os
+tamanhos e avisa se o novo STR não cabe no espaço original. Ela também procura
+automaticamente o original em estruturas como MOVIE/revisado/STR.
+
+QUADROS
+Com o jPSXdec, a ferramenta compara a quantidade de quadros do STR gerado com
+o original. Se o psxavenc remover ou acrescentar quadros finais, ela limita o
+video, ajusta a duracao do audio e converte novamente. Sao feitas ate tres
+tentativas para compensar o arredondamento final do psxavenc. O arquivo somente
+recebe estado OK quando possui a quantidade correta de quadros e cabe no espaco
+do STR original.
+
+LOTE
+No modo pasta, todos os AVI das subpastas são convertidos. A estrutura relativa
+é recriada dentro da pasta de saída.
+
+SEGURANCA
+Os AVI e STR originais nunca são alterados. Arquivos incompletos usam nome
+temporário e só recebem o nome final depois da validação.
+
+REQUISITOS
+- Python 3 com Tkinter
+- psxavenc.exe
+- ffmpeg.exe e ffprobe.exe (vêm com FFmpeg/MSYS2)
+- Java e jpsxdec.jar para conferência/ajuste automático de quadros
+
+Os caminhos já usados no projeto KDK são detectados automaticamente.

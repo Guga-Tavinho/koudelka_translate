@@ -1,0 +1,26 @@
+KOUDELKA MCF - EXTRATOR DE AUDIO XA
+====================================
+
+1. Abra abrir_koudelka_mcf_audio_extractor_gui.bat.
+2. Selecione um arquivo .MCF ou uma pasta inteira.
+3. Escolha a pasta de saida.
+4. Clique em "Extrair audios".
+
+A ferramenta detecta automaticamente os dois formatos encontrados no jogo:
+- SPU-ADPCM em blocos STRM (cenas SCxx), decodificado pela propria ferramenta;
+- CD-ROM XA (como ENDING.MCF), convertido pelo jPSXdec.
+Ela aceita um MCF isolado ou varios MCFs, preservando a estrutura das subpastas.
+
+Requisitos:
+- Python 3 com Tkinter.
+- Java instalado (necessario para os MCFs com audio CD-ROM XA).
+- jpsxdec.jar (necessario para os MCFs com audio CD-ROM XA). O caminho padrao do projeto KDK e detectado automaticamente;
+  se a ferramenta for copiada para outro computador, selecione o JAR na interface.
+
+Cada MCF recebe uma pasta propria. O relatorio_extracao_audio.csv informa os
+arquivos gerados, duracao, frequencia, canais, tamanho e eventuais falhas.
+Uma nova pasta numerada e criada em repeticoes, evitando apagar WAVs existentes.
+
+Nota tecnica sobre STRM:
+O tamanho declarado no cabecalho e respeitado para nao converter o preenchimento
+do setor em silencio. Isso evita as engasgadas periodicas das versoes antigas.

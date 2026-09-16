@@ -1,0 +1,21 @@
+KOUDELKA TEX - VISUALIZADOR E EXPORTADOR
+========================================
+
+1. Abra abrir_koudelka_tex_viewer_gui.bat.
+2. Selecione um TEX ou a pasta DATA do jogo.
+3. Clique em qualquer arquivo da lista para visualiza-lo imediatamente.
+4. Use Exportar PNG ou Exportar todos.
+
+Recursos:
+- pre-visualizacao instantanea;
+- monitoramento automatico do TEX aberto a cada 0,7 segundo;
+- zoom de ajuste, 1x, 2x, 3x, 4x, 6x ou 8x;
+- transparencia automatica, forcada ou desativada;
+- visualizacao da paleta PS1 BGR555 de 256 cores;
+- exportacao individual e em massa, preservando subpastas;
+- composicao automatica de BACK1.TEX + BACK2.TEX em 320x240.
+
+Requisito: Python 3 com Tkinter e Pillow.
+Se necessario, execute instalar_dependencias.bat.
+
+Esta versao apenas le e exporta. Nenhum TEX original e modificado.

@@ -1,0 +1,191 @@
+﻿id;grupo;arquivo;offset;original;portugues;limite;codec
+repo_heal;Menu principal;MENU/REPOMENU.BIN;0x14;Heal;Curar;10;nibble
+repo_status;Menu principal;MENU/REPOMENU.BIN;0x44;Status;Estado;10;nibble
+repo_equip;Menu principal;MENU/REPOMENU.BIN;0x74;Equip;Equipar;10;nibble
+repo_items;Menu principal;MENU/REPOMENU.BIN;0xA4;Items;Itens;10;nibble
+repo_formation;Menu principal;MENU/REPOMENU.BIN;0xD4;Formation;Formação;10;nibble
+repo_read;Menu principal;MENU/REPOMENU.BIN;0x104;Read;Ler;10;nibble
+repo_config;Menu principal;MENU/REPOMENU.BIN;0x134;Config.;Config.;10;nibble
+repo_map;Menu principal;MENU/REPOMENU.BIN;0x164;Map;Mapa;10;nibble
+repo_use;Menu de itens;MENU/REPOMENU.BIN;0x194;Use;Usar;10;nibble
+repo_discard;Menu de itens;MENU/REPOMENU.BIN;0x1C4;Discard;Descartar;10;nibble
+repo_rename;Menu de itens;MENU/REPOMENU.BIN;0x1F4;Rename;Renomear;10;nibble
+repo_examine;Menu de itens;MENU/REPOMENU.BIN;0x224;Examine;Examinar;10;nibble
+battle_move;Comandos de batalha;MENU/BATAMENU.BIN;0x14;Move;Mover;10;nibble
+battle_action;Comandos de batalha;MENU/BATAMENU.BIN;0x44;Action;Ação;10;nibble
+battle_wait;Comandos de batalha;MENU/BATAMENU.BIN;0x74;Wait;Esperar;10;nibble
+battle_status;Comandos de batalha;MENU/BATAMENU.BIN;0xA4;Status;Estado;10;nibble
+battle_attack;Comandos de batalha;MENU/BATAMENU.BIN;0xD4;Attack;Atacar;10;nibble
+battle_items;Comandos de batalha;MENU/BATAMENU.BIN;0x104;Items;Itens;10;nibble
+battle_magic;Comandos de batalha;MENU/BATAMENU.BIN;0x134;Magic;Magia;10;nibble
+battle_weapon;Comandos de batalha;MENU/BATAMENU.BIN;0x164;Weapon;Arma;10;nibble
+battle_escape;Comandos de batalha;MENU/BATAMENU.BIN;0x194;Escape;Fugir;10;nibble
+field_hp;Indicadores do menu;BIN/FIELD.BIN;0x17EC;HP;HP;4;nibble
+field_mp;Indicadores do menu;BIN/FIELD.BIN;0x17F4;MP;MP;4;nibble
+field_lv;Indicadores do menu;BIN/FIELD.BIN;0x17FC;LV;LV;4;nibble
+field_time;Indicadores do menu;BIN/FIELD.BIN;0x1864;Time;Tempo;6;nibble
+battle_hp;Indicadores de batalha;BIN/BATTLE.BIN;0xC94;HP;HP;4;nibble
+battle_mp;Indicadores de batalha;BIN/BATTLE.BIN;0xC9C;MP;MP;4;nibble
+field_got_items;Mensagens do menu;BIN/FIELD.BIN;0x2794;You got items!;Itens obtidos!;16;nibble
+field_cancel;Mensagens do menu;BIN/FIELD.BIN;0x27B4;Cancel;Voltar;8;nibble
+field_ok;Mensagens do menu;BIN/FIELD.BIN;0x27C4;OK;OK;4;nibble
+field_throw_forbidden;Mensagens do menu;BIN/FIELD.BIN;0x27CC;You can't throw this away.;Não pode jogar isso fora.;28;nibble
+field_choose;Mensagens do menu;BIN/FIELD.BIN;0x2804;Choose ;Escolha;8;nibble
+field_koudelka_using;Mensagens do menu;BIN/FIELD.BIN;0x2814;Koudelka is using this.;Koudelka está usando.;24;nibble
+field_edward_using;Mensagens do menu;BIN/FIELD.BIN;0x2844;Edward is using this.;Edward está usando.;22;nibble
+field_james_using;Mensagens do menu;BIN/FIELD.BIN;0x2870;James is using this.;James está usando.;22;nibble
+field_throw_count;Mensagens do menu;BIN/FIELD.BIN;0x289C; items to throw away.; itens para descartar.;24;nibble
+field_get;Mensagens do menu;BIN/FIELD.BIN;0x29AC;Get !;Pegar;6;nibble
+movie_load;Tela Continue/Load;BIN/MOVIE.BIN;0x97C;Load;Abrir;6;nibble
+movie_card_slot1;Tela Continue/Load;BIN/MOVIE.BIN;0x988;Memory Card slot 1;Cartão de memória 1;20;nibble
+movie_cancel;Tela Continue/Load;BIN/MOVIE.BIN;0x9B0;Cancel;Voltar;8;nibble
+movie_ok;Tela Continue/Load;BIN/MOVIE.BIN;0x9C0;OK;OK;4;nibble
+movie_card_slot2;Tela Continue/Load;BIN/MOVIE.BIN;0xCE4;Memory Card slot 2;Cartão de memória 2;20;nibble
+movie_card_slot1_label;Tela Continue/Load;BIN/MOVIE.BIN;0x1174;Memory Card slot 1;Cartão de memória 1;20;nibble
+movie_card_slot2_label;Tela Continue/Load;BIN/MOVIE.BIN;0x119C;Memory Card slot 2;Cartão de memória 2;20;nibble
+field_card_slot1;Tela Save/Memory Card;BIN/FIELD.BIN;0x2CEC;Memory Card slot 1;Cartão de memória 1;20;nibble
+field_card_slot2;Tela Save/Memory Card;BIN/FIELD.BIN;0x318C;Memory Card slot 2;Cartão de memória 2;20;nibble
+field_card_slot1_label;Tela Save/Memory Card;BIN/FIELD.BIN;0x3348;Memory Card slot 1;Cartão de memória 1;20;nibble
+field_card_slot2_label;Tela Save/Memory Card;BIN/FIELD.BIN;0x3370;Memory Card slot 2;Cartão de memória 2;20;nibble
+rename_space;Tela de renomear;MENU/RENMTEST.BIN;0x2C0;Space;Espaço;8;nibble
+rename_delete;Tela de renomear;MENU/RENMTEST.BIN;0x2D0;Delete;Apagar;8;nibble
+magic_00;Aprendizado de magia;MENU/GETMAGIC.BIN;0x300;"You learned|the spell ""Flare"".";"Você aprendeu|a magia ""Flare"".";48;magic
+magic_01;Aprendizado de magia;MENU/GETMAGIC.BIN;0x330;"You learned|the spell ""Geyser"".";"Você aprendeu|a magia ""Geyser"".";48;magic
+magic_02;Aprendizado de magia;MENU/GETMAGIC.BIN;0x360;"You learned|the spell ""Tornado"".";"Você aprendeu|a magia ""Tornado"".";48;magic
+magic_03;Aprendizado de magia;MENU/GETMAGIC.BIN;0x390;"You learned|the spell ""Megalith"".";"Você aprendeu|a magia ""Megalith"".";48;magic
+magic_04;Aprendizado de magia;MENU/GETMAGIC.BIN;0x3C0;"You learned|the spell ""Revive"".";"Você aprendeu|a magia ""Revive"".";48;magic
+magic_05;Aprendizado de magia;MENU/GETMAGIC.BIN;0x3F0;"You learned|the spell ""Reflect"".";"Você aprendeu|a magia ""Reflect"".";48;magic
+scan_n_00000;Varrido: BIN/BATTLE.BIN;BIN/BATTLE.BIN;0x99C;level went up!;level went up!;14;nibble_auto
+scan_n_00001;Varrido: BIN/BATTLE.BIN;BIN/BATTLE.BIN;0x9E8;You can't escape!!;You can't escape!!;18;nibble_auto
+scan_n_00002;Varrido: BIN/BATTLE.BIN;BIN/BATTLE.BIN;0xA10;You weren't able to run away!;You weren't able to run away!;29;nibble_auto
+scan_n_00003;Varrido: BIN/BATTLE.BIN;BIN/BATTLE.BIN;0xB74;You can't get past the monster!;You can't get past the monster!;31;nibble_auto
+scan_n_00004;Varrido: BIN/BATTLE.BIN;BIN/BATTLE.BIN;0xCA8;Koudelka;Koudelka;8;nibble_auto
+scan_n_00005;Varrido: BIN/BATTLE.BIN;BIN/BATTLE.BIN;0xCBC;Edward;Edward;6;nibble_auto
+scan_n_00006;Varrido: BIN/BATTLE.BIN;BIN/BATTLE.BIN;0xCCC;James;James;5;nibble_auto
+scan_n_00007;Varrido: BIN/BATTLE.BIN;BIN/BATTLE.BIN;0xD30;MaxHP;MaxHP;5;nibble_auto
+scan_n_00008;Varrido: BIN/BATTLE.BIN;BIN/BATTLE.BIN;0xD3C;MaxMP;MaxMP;5;nibble_auto
+scan_n_00009;Varrido: BIN/BATTLE.BIN;BIN/BATTLE.BIN;0x10EC;You can't get past the monster!;You can't get past the monster!;31;nibble_auto
+scan_n_00010;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x9B4;Weapon;Weapon;6;nibble_auto
+scan_n_00011;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x9C4;Armor;Armor;5;nibble_auto
+scan_n_00012;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x9D0;Accessory;Accessory;9;nibble_auto
+scan_n_00013;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x9E4;Tool;Tool;4;nibble_auto
+scan_n_00014;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0xAD8;Cancel;Cancel;6;nibble_auto
+scan_n_00015;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0xF64;Monaural;Monaural;8;nibble_auto
+scan_n_00016;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0xF78;Stereo;Stereo;6;nibble_auto
+scan_n_00017;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0xF88;Unassigned;Unassigned;10;nibble_auto
+scan_n_00018;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0xFA0;Look/Open;Look/Open;9;nibble_auto
+scan_n_00019;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0xFB4;Run/Close;Run/Close;9;nibble_auto
+scan_n_00020;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0xFC8;Menu   ;Menu   ;7;nibble_auto
+scan_n_00021;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0xFD8;Zoom In ;Zoom In ;8;nibble_auto
+scan_n_00022;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0xFEC;Zoom Out;Zoom Out;8;nibble_auto
+scan_n_00023;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x1000;Pan Left;Pan Left;8;nibble_auto
+scan_n_00024;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x1014;Pan Right;Pan Right;9;nibble_auto
+scan_n_00025;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x1544;Vibration:On;Vibration:On;12;nibble_auto
+scan_n_00026;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x1560;Vibration:Off;Vibration:Off;13;nibble_auto
+scan_n_00027;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x1804;Koudelka;Koudelka;8;nibble_auto
+scan_n_00028;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x1818;Edward;Edward;6;nibble_auto
+scan_n_00029;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x1828;James;James;5;nibble_auto
+scan_n_00030;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x18C4;Target?;Target?;7;nibble_auto
+scan_n_00031;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x18D4;Koudelka;Koudelka;8;nibble_auto
+scan_n_00032;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x18E8;Edward;Edward;6;nibble_auto
+scan_n_00033;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x18F8;James;James;5;nibble_auto
+scan_n_00034;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2224;Level ;Level ;6;nibble_auto
+scan_n_00035;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2288;Exp.;Exp.;4;nibble_auto
+scan_n_00036;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2294;Next;Next;4;nibble_auto
+scan_n_00037;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2AA4;Bonus Points !;Bonus Points !;14;nibble_auto
+scan_n_00038;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2AC4;Level Up;Level Up;8;nibble_auto
+scan_n_00039;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2AD8;Level ;Level ;6;nibble_auto
+scan_n_00040;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2AFC;R2:AP Explanation;R2:AP Explanation;17;nibble_auto
+scan_n_00041;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2B20;Cancel;Cancel;6;nibble_auto
+scan_n_00042;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2B38;Exp.;Exp.;4;nibble_auto
+scan_n_00043;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2B44;Next;Next;4;nibble_auto
+scan_n_00044;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2CE0;SAVE;SAVE;4;nibble_auto
+scan_n_00045;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2D14;Cancel;Cancel;6;nibble_auto
+scan_n_00046;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2D24;Save;Save;4;nibble_auto
+scan_n_00047;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2D30;Delete;Delete;6;nibble_auto
+scan_n_00048;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2D48;Format;Format;6;nibble_auto
+scan_n_00049;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2D58;Overwrite;Overwrite;9;nibble_auto
+scan_n_00050;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2D6C;Now saving...Don't remove the MEMORY CARD.;Now saving...Don't remove the MEMORY CARD.;42;nibble_auto
+scan_n_00051;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2DC8;MEMORY CARD has been replaced.;MEMORY CARD has been replaced.;30;nibble_auto
+scan_n_00052;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2E08;No MEMORY CARD detected.;No MEMORY CARD detected.;24;nibble_auto
+scan_n_00053;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2E3C;A save error occurred.;A save error occurred.;22;nibble_auto
+scan_n_00054;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2E6C;Save complete.;Save complete.;14;nibble_auto
+scan_n_00055;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2E8C;Deleting Koudelka save data...;Deleting Koudelka save data...;30;nibble_auto
+scan_n_00056;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2ECC;An access error occurred.;An access error occurred.;25;nibble_auto
+scan_n_00057;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2F00;Save data deleted.;Save data deleted.;18;nibble_auto
+scan_n_00058;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2F28;Formatting...Don't remove Memory Card.;Formatting...Don't remove Memory Card.;38;nibble_auto
+scan_n_00059;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2F78;MEMORY CARD format complete.;MEMORY CARD format complete.;28;nibble_auto
+scan_n_00060;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2FB4;A format error occurred.;A format error occurred.;24;nibble_auto
+scan_n_00061;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x2FE8;Checking...Don't remove the MEMORY CARD.;Checking...Don't remove the MEMORY CARD.;40;nibble_auto
+scan_n_00062;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x303C;MEMORY CARD is full.;MEMORY CARD is full.;20;nibble_auto
+scan_n_00063;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x3068;MEMORY CARD is unformatted.;MEMORY CARD is unformatted.;27;nibble_auto
+scan_n_00064;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x30A0;A check error occurred.;A check error occurred.;23;nibble_auto
+scan_n_00065;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x30D0;Unable to save.;Unable to save.;15;nibble_auto
+scan_n_00066;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x3138;File;File;4;nibble_auto
+scan_n_00067;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x3158;Verifying MEMORY CARD...;Verifying MEMORY CARD...;24;nibble_auto
+scan_n_00068;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x34A8;Time;Time;4;nibble_auto
+scan_n_00069;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x3510;In use by another game file.;In use by another game file.;28;nibble_auto
+scan_n_00070;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x354C;Available;Available;9;nibble_auto
+scan_n_00071;Varrido: BIN/FIELD.BIN;BIN/FIELD.BIN;0x3740;Yes ;Yes ;4;nibble_auto
+scan_n_00072;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0x9C8;Now loading...Don't remove the MEMORY CARD.;Now loading...Don't remove the MEMORY CARD.;43;nibble_auto
+scan_n_00073;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0xA24;MEMORY CARD has been replaced.;MEMORY CARD has been replaced.;30;nibble_auto
+scan_n_00074;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0xA64;No MEMORY CARD detected.;No MEMORY CARD detected.;24;nibble_auto
+scan_n_00075;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0xA98;A load error occurred.;A load error occurred.;22;nibble_auto
+scan_n_00076;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0xAC8;Load complete.;Load complete.;14;nibble_auto
+scan_n_00077;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0xAE8;Checking...Don't remove the MEMORY CARD.;Checking...Don't remove the MEMORY CARD.;40;nibble_auto
+scan_n_00078;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0xB3C;No Koudelka save data found!;No Koudelka save data found!;28;nibble_auto
+scan_n_00079;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0xB78;A check error occurred.;A check error occurred.;23;nibble_auto
+scan_n_00080;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0xBD0;MEMORY CARD is unformatted.;MEMORY CARD is unformatted.;27;nibble_auto
+scan_n_00081;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0xC08;Unable to load.;Unable to load.;15;nibble_auto
+scan_n_00082;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0xC50;MEMORY CARD has been removed.;MEMORY CARD has been removed.;29;nibble_auto
+scan_n_00083;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0xCB0;Verifying MEMORY CARD...;Verifying MEMORY CARD...;24;nibble_auto
+scan_n_00084;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0xD38;DISC;DISC;4;nibble_auto
+scan_n_00085;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0xD44;File;File;4;nibble_auto
+scan_n_00086;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0xF64;Time;Time;4;nibble_auto
+scan_n_00087;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0xFA4;In use by another game file.;In use by another game file.;28;nibble_auto
+scan_n_00088;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0xFE0;Available;Available;9;nibble_auto
+scan_n_00089;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0x134C;Monaural;Monaural;8;nibble_auto
+scan_n_00090;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0x1360;Stereo;Stereo;6;nibble_auto
+scan_n_00091;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0x1370;Config.;Config.;7;nibble_auto
+scan_n_00092;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0x1380;Unassigned;Unassigned;10;nibble_auto
+scan_n_00093;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0x1398;Look/Open;Look/Open;9;nibble_auto
+scan_n_00094;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0x13AC;Run/Close;Run/Close;9;nibble_auto
+scan_n_00095;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0x13C0;Menu   ;Menu   ;7;nibble_auto
+scan_n_00096;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0x13D0;Zoom In ;Zoom In ;8;nibble_auto
+scan_n_00097;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0x13E4;Zoom Out;Zoom Out;8;nibble_auto
+scan_n_00098;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0x13F8;Pan Left;Pan Left;8;nibble_auto
+scan_n_00099;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0x140C;Pan Right;Pan Right;9;nibble_auto
+scan_n_00100;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0x188C;Vibration:On;Vibration:On;12;nibble_auto
+scan_n_00101;Varrido: BIN/MOVIE.BIN;BIN/MOVIE.BIN;0x18A8;Vibration:Off;Vibration:Off;13;nibble_auto
+scan_n_00102;Varrido: MENU/MGCTEST.BIN;MENU/MGCTEST.BIN;0x1D4;Weapon;Weapon;6;nibble_auto
+scan_n_00103;Varrido: MENU/MGCTEST.BIN;MENU/MGCTEST.BIN;0x1E6;Magic;Magic;5;nibble_auto
+scan_n_00104;Varrido: MENU/MGCTEST.BIN;MENU/MGCTEST.BIN;0x1F8;Magic;Magic;5;nibble_auto
+scan_n_00105;Varrido: SLUS_010.51;SLUS_010.51;0x4020;The disc cover is open.;The disc cover is open.;23;nibble_auto
+scan_n_00106;Varrido: SLUS_010.51;SLUS_010.51;0x4050;Please close the disc cover.;Please close the disc cover.;28;nibble_auto
+scan_n_00107;Varrido: SLUS_010.51;SLUS_010.51;0x408C;No disc found!;No disc found!;14;nibble_auto
+scan_n_00108;Varrido: SLUS_010.51;SLUS_010.51;0x40AC;Please insert DISC ;Please insert DISC ;19;nibble_auto
+scan_n_00109;Varrido: SLUS_010.51;SLUS_010.51;0x40D4;Incorrect disc.Please insert DISC ;Incorrect disc.Please insert DISC ;34;nibble_auto
+scan_n_00110;Varrido: SLUS_010.51;SLUS_010.51;0x411C;Incorrect disc.;Incorrect disc.;15;nibble_auto
+scan_n_00111;Varrido: SLUS_010.51;SLUS_010.51;0x5450;Koudelka's;Koudelka's;10;nibble_auto
+scan_n_00112;Varrido: SLUS_010.51;SLUS_010.51;0x5468;Edward's;Edward's;8;nibble_auto
+scan_n_00113;Varrido: SLUS_010.51;SLUS_010.51;0x547C;James's;James's;7;nibble_auto
+scan_n_00114;Varrido: SLUS_010.51;SLUS_010.51;0x5D60;Level ;Level ;6;nibble_auto
+scan_n_00115;Varrido: SLUS_010.51;SLUS_010.51;0x5D70;Attack;Attack;6;nibble_auto
+scan_n_00116;Varrido: SLUS_010.51;SLUS_010.51;0x5D80;Weakness;Weakness;8;nibble_auto
+scan_n_00117;Varrido: SLUS_010.51;SLUS_010.51;0x5D94;Speciality;Speciality;10;nibble_auto
+scan_n_00118;Varrido: SLUS_010.51;SLUS_010.51;0x5DAC;Reflect;Reflect;7;nibble_auto
+scan_n_00119;Varrido: SLUS_010.51;SLUS_010.51;0x5DBC;Absorb;Absorb;6;nibble_auto
+scan_n_00120;Varrido: SLUS_010.51;SLUS_010.51;0x5DCC;Null;Null;4;nibble_auto
+scan_n_00121;Varrido: SLUS_010.51;SLUS_010.51;0x5DD8;Half;Half;4;nibble_auto
+scan_n_00122;Varrido: SLUS_010.51;SLUS_010.51;0x5DE4;Fire;Fire;4;nibble_auto
+scan_n_00123;Varrido: SLUS_010.51;SLUS_010.51;0x5DF0;Water;Water;5;nibble_auto
+scan_n_00124;Varrido: SLUS_010.51;SLUS_010.51;0x5DFC;Earth;Earth;5;nibble_auto
+scan_n_00125;Varrido: SLUS_010.51;SLUS_010.51;0x5E08;Wind;Wind;4;nibble_auto
+scan_n_00126;Varrido: SLUS_010.51;SLUS_010.51;0x5E14;Light;Light;5;nibble_auto
+scan_n_00127;Varrido: SLUS_010.51;SLUS_010.51;0x5E20;Dark;Dark;4;nibble_auto
+scan_n_00128;Varrido: SLUS_010.51;SLUS_010.51;0x5E2C;HP Drain;HP Drain;8;nibble_auto
+scan_n_00129;Varrido: SLUS_010.51;SLUS_010.51;0x5E40;MP Drain;MP Drain;8;nibble_auto
+scan_n_00130;Varrido: SLUS_010.51;SLUS_010.51;0x5E54;Paralysis;Paralysis;9;nibble_auto
+scan_n_00131;Varrido: SLUS_010.51;SLUS_010.51;0x5E68;Silence;Silence;7;nibble_auto
+scan_n_00132;Varrido: SLUS_010.51;SLUS_010.51;0x5E78;Poison;Poison;6;nibble_auto
+scan_n_00133;Varrido: SLUS_010.51;SLUS_010.51;0x5E94;Attack  None;Attack  None;12;nibble_auto

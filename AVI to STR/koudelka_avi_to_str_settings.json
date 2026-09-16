@@ -1,0 +1,22 @@
+{
+  "psxavenc": "E:\\KDK\\Koudelka (Disc 1)\\MOVIE\\psxavenc-windows\\bin\\psxavenc.exe",
+  "ffprobe": "C:\\msys64\\mingw64\\bin\\ffprobe.exe",
+  "ffmpeg": "C:\\msys64\\mingw64\\bin\\ffmpeg.exe",
+  "jpsxdec": "E:\\KDK\\Tools\\jpsxdec_v2.1-beta\\jpsxdec.jar",
+  "java": "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.4.7-hotspot\\bin\\java.exe",
+  "codec": "v2",
+  "width": "320",
+  "height": "240",
+  "fps": "15",
+  "sample_rate": "37800",
+  "channels": "2",
+  "bits": "4",
+  "speed": "2",
+  "xa_file": "1",
+  "xa_channel": "1",
+  "probe": true,
+  "normalize": true,
+  "match_frames": true,
+  "audio_after": true,
+  "continue_on_error": true
+}

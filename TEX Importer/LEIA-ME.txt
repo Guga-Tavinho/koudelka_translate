@@ -1,0 +1,37 @@
+KOUDELKA - IMPORTADOR PNG PARA TEX
+==================================
+
+MODOS
+1. Um PNG para um TEX: selecione o TEX original como molde e um PNG com
+   exatamente as mesmas dimensoes.
+2. Tela inicial: selecione a pasta DATA contendo BACK1.TEX e BACK2.TEX e um
+   PNG 320x240. A ferramenta divide a imagem e gera os dois TEX automaticamente.
+
+PALETA
+- Preservar paleta original: opcao mais segura e recomendada. As cores do PNG
+  sao aproximadas para as cores que ja existem no TEX.
+- Gerar nova paleta: cria uma nova paleta PS1 BGR555 com ate 256 cores e
+  preserva o comportamento STP da paleta do molde.
+
+TELA INICIAL E PALETA COMPARTILHADA
+- BACK1.TEX e BACK2.TEX usam uma paleta compartilhada. Para gerar uma nova
+  paleta, use o modo "Tela inicial 320x240 para BACK1 + BACK2". A ferramenta
+  cria uma unica paleta para a imagem completa e grava a mesma CLUT nos dois
+  arquivos.
+- Por seguranca, a geracao de nova paleta e bloqueada ao selecionar isoladamente
+  BACK1, BACK2, LOGOL ou LOGOR. Nesse caso, preserve a paleta original ou use o
+  modo de tela inicial.
+
+PREVIA EM TEMPO REAL
+- O painel da esquerda mostra o TEX original, isto e, como a imagem esta no jogo.
+- O painel da direita mostra como o PNG editado ficara depois da conversao para
+  a paleta e o formato do TEX.
+- Ao salvar o PNG no editor de imagens, a previa e atualizada automaticamente
+  em ate aproximadamente 0,7 segundo.
+- Alterar paleta, transparencia, dithering ou zoom tambem atualiza a comparacao.
+
+A ferramenta preserva cabecalho e tamanho do molde, nunca sobrescreve diretamente
+o TEX original e gera um relatorio JSON.
+
+Requisitos: Python 3 com Tkinter e Pillow.
+Execute instalar_dependencias.bat se necessario.
