@@ -15,7 +15,7 @@ Este repositório contém ferramentas em código-fonte criadas para inspecionar,
 2. Apenas a versão japonesa possui essas legendas.
 3. Por isso, a ferramenta de legendas MCF deve usar os MCFs japoneses como base. O MCF armazena as legendas como imagens indexadas, não como texto comum.
 
-As ferramentas foram desenvolvidas e testadas principalmente no Windows 10/11 de 64 bits com imagens BIN/CUE de discos obtidos legalmente pelo próprio usuário.
+As ferramentas foram desenvolvidas e testadas principalmente no Windows 10/11 de 64 bits.
 
 ## Localização dos arquivos dentro da imagem BIN
 
