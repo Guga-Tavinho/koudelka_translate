@@ -101,9 +101,9 @@ It does not edit item names or descriptions from <code>001.TX4</code>.
 Dependencies: Python, Tkinter, and Pillow.
 
 ### jpsxdec_v2.1-beta
+Link: https://github.com/m35/jpsxdec
 
 jPSXdec is an external PlayStation 1 media analysis and conversion utility. This project uses it mainly to:
-Link: https://github.com/m35/jpsxdec
 
 - analyze STR files;
 - verify frame counts;
