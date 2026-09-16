@@ -1,6 +1,6 @@
 # Koudelka PS1 Translation and Modding Tools
 
-[Main README](README.md) | [Português (Brasil)](README.pt-BR.md)
+[Português (Brasil)](README.md)
 
 This repository contains source-code tools created to inspect, translate, rebuild, and inject resources used by the PlayStation version of **Koudelka**.
 
