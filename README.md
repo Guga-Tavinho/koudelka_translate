@@ -2,5 +2,5 @@
 
 ## Documentation / Documentação
 
-- [English](README.en.md)
 - [Português (Brasil)](README.pt-BR.md)
+- [English](README.en.md)
