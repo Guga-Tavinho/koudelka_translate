@@ -1,3 +1,4 @@
+[![Visitas](https://hits.sh/github.com/Guga-Tavinho/koudelka_translate.svg?style=flat-square&label=visitas&color=blue)](https://hits.sh/github.com/Guga-Tavinho/koudelka_translate/)
 # Koudelka PS1 Translation and Modding Tools
 
 [English](README.en.md)
