@@ -10,7 +10,7 @@ Este repositório contém ferramentas em código-fonte criadas para inspecionar,
 
 ## 🎥 Demonstração da tradução
 
-[![Assista ao vídeo da tradução de Koudelka](assets/koudelka-traducao-video.png)](https://youtu.be/drU19__VhAE)
+[![Assista ao vídeo da tradução de Koudelka](github.com/Guga-Tavinho/koudelka_translate/blob/main/exec-fd9ce22d-03b0-4e47-9d9d-8378b9d120de.png)](https://youtu.be/drU19__VhAE)
 
 ---
 
