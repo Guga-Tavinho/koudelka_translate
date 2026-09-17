@@ -9,6 +9,9 @@ This repository contains source-code tools created to inspect, translate, rebuil
 > This is a source-only project. It does not provide a game image, original game files, BIOS files, compiled releases, or copyrighted assets.
 
 ---
+## 🎥 Translation Preview
+
+[![Watch the Koudelka translation video](https://raw.githubusercontent.com/Guga-Tavinho/koudelka_translate/main/exec-fd9ce22d-03b0-4e47-9d9d-8378b9d120de.png)](https://youtu.be/drU19__VhAE)
 
 ## Important information about game versions
 
