@@ -8,6 +8,10 @@ Este repositório contém ferramentas em código-fonte criadas para inspecionar,
 > [!IMPORTANT]
 > Este é um projeto distribuído apenas em código-fonte. Ele não fornece imagem do jogo, arquivos originais, BIOS, versões compiladas ou recursos protegidos por direitos autorais.
 
+## 🎥 Demonstração da tradução
+
+[![Assista ao vídeo da tradução de Koudelka](assets/koudelka-traducao-video.png)](https://youtu.be/drU19__VhAE)
+
 ---
 
 ## Informações importantes sobre as versões do jogo
